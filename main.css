@@ -1,25 +1,43 @@
 body {
 	text-align: center;
+	font-family: sans-serif;
 }
 
 nav {
 	position: fixed;
-	background-color: #333;
+	background-color: #DCDCDC;
 	width: 100%;
 	left: 0;
 	top: 0;
 	height: 35px;
-	color: #DCDCDC;
 	}
 
 footer {
-	position: fixed;
-	background-color: #333;
 	width: 100%;
 	left: 0;
 	bottom: 0;
 	height: 35px;
-	color: #DCDCDC;
+	background-color: white;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+.nav-li {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	top: 0;
+}
+
+li a{
+	color: black;
+	text-decoration: none;
 }
 
 
@@ -28,7 +46,10 @@ main {
 }
 
 h1 {
-	text-align: center;
+	position: fixed;
+	left: 5px;
+	display: inline-block;
+	margin-top: 0px;
 }
 
 
@@ -47,4 +68,60 @@ h1 {
 	margin-top: 25px;
 	margin-bottom: 25px;
 	padding: 10px;
+}
+
+.footer-picture {
+	width: 25px;
+	margin-top: 5px;
+}
+
+@media all and (min-width: 700px) {
+	
+	nav {
+		position: fixed;
+		width: 30%;
+		left: 0;
+		top: 33%;
+		background-color: white;
+	}
+
+
+	h1 {
+		position: static;
+	}
+
+
+	ul {
+		list-style-type: none;
+		position: relative;
+	}
+
+	.nav-li {
+		display: block;
+	}
+
+	footer {
+		position: fixed;
+		width: 30%;
+		left: 0;
+		bottom: 40%;
+		color: #DCDCDC;
+	}
+
+	main {
+		float: right;
+		margin-right: 5%;
+		width: 60%;
+	}
+
+	#bar {
+		position: fixed;
+		left: 30%;
+		background-color: gray;
+		width: 1px;
+		height: 100%;
+		top: 0;
+	}
+
+	
 }
